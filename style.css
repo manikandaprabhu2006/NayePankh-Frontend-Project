@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth
+}
+
+body {
+    background: #f8f9fa;
+    color: #333;
+    transition: .4s
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: #fff;
+    position: sticky;
+    top: 0
+}
+
+.logo {
+    color: #2e7d32
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80') center/cover
+}
+
+.btn {
+    background: #2e7d32;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none
+}
+
+.section {
+    padding: 70px 8%;
+    text-align: center
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px
+}
+
+.card {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .1)
+}
+
+.volunteer {
+    background: #e8f5e9
+}
+
+form {
+    max-width: 600px;
+    margin: auto
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0
+}
+
+footer {
+    background: #2e7d32;
+    color: #fff;
+    text-align: center;
+    padding: 20px
+}
+
+.dark {
+    background: #121212;
+    color: #fff
+}
+
+.dark .navbar,
+.dark .card {
+    background: #222;
+    color: #fff
+}
+
+@media(max-width:768px) {
+    .navbar,
+    .nav-links {
+        flex-direction: column
+    }
+}
